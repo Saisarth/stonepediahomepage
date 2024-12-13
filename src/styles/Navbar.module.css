@@ -1,0 +1,47 @@
+.navbar {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuToggle {
+  display: none;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.navLinks {
+  display: flex;
+  list-style: none;
+}
+.navLinks li {
+  margin: 0 10px;
+}
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+.navLinksMobile {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: #333;
+  width: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+  .navLinks {
+    display: none;
+  }
+}

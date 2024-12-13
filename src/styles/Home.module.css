@@ -1,0 +1,189 @@
+
+
+/* Hero Section */
+.hero {
+  background: url('/images/hero-bg.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+}
+
+.heroContent {
+  z-index: 1;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.heroTitle span {
+  display: inline-block;
+  transition: transform 0.1s ease;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Products Section */
+.products {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.productCard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.productCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.productCard h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonialCard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  font-style: italic;
+  color: #555;
+}
+
+.testimonialCard p {
+  margin-bottom: 10px;
+}
+
+.testimonialCard p:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .ctaButton {
+    padding: 8px 15px;
+  }
+
+  .productCard {
+    width: 80%;
+  }
+
+  .testimonialCard {
+    padding: 20px;
+  }
+}
